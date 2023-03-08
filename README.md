@@ -1,10 +1,12 @@
-# Programmatic NSWindow Tabbing
+# Programmatic NSWindow Tabbing + Tab Drop Target
 
 ![Swift 5.3](https://img.shields.io/badge/Swift-5.3-blue.svg?style=flat)
 ![License](https://img.shields.io/github/license/DivineDominion/NSWindow-Tabbing.svg?style=flat)
 ![Platform](https://img.shields.io/badge/platform-macOS-lightgrey.svg?style=flat)
 
 Demonstrating how to implement programmatic creation of tabs in `NSWindow`s without the use of `NSDocument`.
+
+**Modified by Frank Rausch to show how to make the tab items a target for drag and drop; see [Stack Overflow](https://stackoverflow.com/questions/75652413/how-can-i-accept-a-drop-for-a-dragged-item-on-a-window-tab-in-macos-appkit).**
 
 - Checkout the `shared-window-controller` tag to see how to re-use a single `NSWindowController` for all tabs as [per my experimental blog post](https://christiantietze.de/posts/2019/07/nswindow-tabbing-single-nswindowcontroller/). Don't use this in production, though.
 - Checkout the `multiple-window-controllers` tag or the current `master` branch to see how to manage `NSWindowController`s for your tabs. I [wrote about this production-ready approach, too](https://christiantietze.de/posts/2019/07/nswindow-tabbing-multiple-nswindowcontroller/).

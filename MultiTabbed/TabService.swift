@@ -62,6 +62,8 @@ class TabService: TabDelegate {
 
         windowController.tabDelegate = self
 
+        window.tab.accessoryView = TabAccessoryView(windowController: windowController)
+
         return management
     }
 

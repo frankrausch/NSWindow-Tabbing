@@ -44,4 +44,12 @@ class WindowController: NSWindowController {
             print("- ", window, window.title, "isKey =", window.isKeyWindow, ", isMain =", window.isMainWindow, " at ", window.frame)
         }
     }
+
+    func handleDroppedText(_ text: String) {
+        print("Dropped text: \(text)")
+
+        guard let contentViewController = contentViewController as? ViewController else { return }
+        contentViewController.label.stringValue = text
+    }
+
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2797E4BC29B8935100241EC0 /* TabAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797E4BB29B8935100241EC0 /* TabAccessoryView.swift */; };
+		2797E4BE29B8935F00241EC0 /* TabDropTargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797E4BD29B8935F00241EC0 /* TabDropTargetView.swift */; };
 		50438AF322DF1BAF002C9F44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50438AF222DF1BAF002C9F44 /* AppDelegate.swift */; };
 		50438AF522DF1BAF002C9F44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50438AF422DF1BAF002C9F44 /* ViewController.swift */; };
 		50438AF722DF1BB0002C9F44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50438AF622DF1BB0002C9F44 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2797E4BB29B8935100241EC0 /* TabAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAccessoryView.swift; sourceTree = "<group>"; };
+		2797E4BD29B8935F00241EC0 /* TabDropTargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabDropTargetView.swift; sourceTree = "<group>"; };
 		50438AEF22DF1BAF002C9F44 /* MultiTabbed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiTabbed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50438AF222DF1BAF002C9F44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50438AF422DF1BAF002C9F44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 				50438AF222DF1BAF002C9F44 /* AppDelegate.swift */,
 				50438AF422DF1BAF002C9F44 /* ViewController.swift */,
 				50F8575C22E2FDBD00BC0BAB /* TabService.swift */,
+				2797E4BB29B8935100241EC0 /* TabAccessoryView.swift */,
+				2797E4BD29B8935F00241EC0 /* TabDropTargetView.swift */,
 				50438B0222DF1BBC002C9F44 /* WindowController.swift */,
 				50F8576022E3047000BC0BAB /* WindowController.storyboard */,
 				50F8575E22E2FEC600BC0BAB /* NotificationToken.swift */,
@@ -146,11 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2797E4BE29B8935F00241EC0 /* TabDropTargetView.swift in Sources */,
 				50438AF522DF1BAF002C9F44 /* ViewController.swift in Sources */,
 				50F8575F22E2FEC600BC0BAB /* NotificationToken.swift in Sources */,
 				50438B0322DF1BBC002C9F44 /* WindowController.swift in Sources */,
 				50438AF322DF1BAF002C9F44 /* AppDelegate.swift in Sources */,
 				50F8575D22E2FDBD00BC0BAB /* TabService.swift in Sources */,
+				2797E4BC29B8935100241EC0 /* TabAccessoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
