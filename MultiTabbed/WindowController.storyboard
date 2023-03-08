@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="pTM-Kk-SKO">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="pTM-Kk-SKO">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,11 +30,29 @@
         <!--View Controller-->
         <scene sceneID="P9e-tD-7xM">
             <objects>
-                <viewController id="e5C-fb-H0y" sceneMemberID="viewController">
+                <viewController id="e5C-fb-H0y" customClass="ViewController" customModule="MultiTabbed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Xpc-aK-KG8">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="g0R-m3-erp">
+                                <rect key="frame" x="10" y="272" width="430" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Any text dropped on this window’s tab will appear here." id="tPJ-mx-aRQ">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="g0R-m3-erp" secondAttribute="trailing" constant="12" id="4YP-97-52J"/>
+                            <constraint firstItem="g0R-m3-erp" firstAttribute="top" secondItem="Xpc-aK-KG8" secondAttribute="top" constant="12" id="Ufy-7H-QYd"/>
+                            <constraint firstItem="g0R-m3-erp" firstAttribute="leading" secondItem="Xpc-aK-KG8" secondAttribute="leading" constant="12" id="uYN-FU-CTC"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="g0R-m3-erp" id="dQI-lu-SQE"/>
+                    </connections>
                 </viewController>
                 <customObject id="Eoh-aZ-yzh" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

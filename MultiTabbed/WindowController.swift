@@ -4,7 +4,7 @@ import Cocoa
 
 var count = 0
 
-protocol TabDelegate: class {
+protocol TabDelegate: AnyObject {
     func createTab(newWindowController: WindowController,
                    inWindow window: NSWindow,
                    ordered orderingMode: NSWindow.OrderingMode)
